@@ -23,9 +23,7 @@ class Genre
   end
 
   def self.create(name)
-    new(name).tap do |genre|
-    genre.save
-    end
+    new(name).tap {|genre| genre.save}
   end
 
   def add_song(song)
